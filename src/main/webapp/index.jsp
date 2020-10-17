@@ -9,20 +9,28 @@
 <html>
 <head>
     <title>index page</title>
+    <jsp:include page="headers.jsp"/>
+
 </head>
 <body>
+<div class="container">
+<jsp:include page="navigator.jsp"/>
+
 <h1>
-<%
-    //java code
+    <%
+        //java code
 
-    String nameParam = request.getParameter("name");
-    if (nameParam == null){
-        out.print("Hello user");
-    }else{
-        out.print("Hello "+ nameParam + "!");
-    }
+        String nameParam = request.getParameter("name");
+        if (nameParam == null) {
+            out.print("Hello user");
+        } else {
+            out.print("Hello " + nameParam + "!");
+        }
 
-%>
-    </h1>
+    %>
+</h1>
+</div>
+<jsp:include page="footers.jsp"/>
+
 </body>
 </html>
