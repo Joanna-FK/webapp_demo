@@ -62,8 +62,10 @@
                         <td>${grade.id}</td>
                         <td>${grade.value}</td>
                         <td>${grade.timeCreated}</td>
-                        <td>${grade.student}</td>
-                        <td></td>
+                        <td>${grade.subject}</td>
+                        <td>
+                            <a href="${pageContext.request.contextPath}/grade/remove?gradeId=${grade.id}">Remove</a>
+                        </td>
                     </tr>
                 </c:forEach>
             </table>

@@ -27,8 +27,10 @@
             <input type="text" name="last_name_field"/>
         </div>
         <div>
-            <label>Date of birth:</label>
-            <input type="date" name="date_of_birth_field"/>
+            <label>
+                <input type="checkbox" name="graduated_field">
+                <span>Graduated</span>
+            </label>
         </div>
         <div>
             <label>Graduated:</label>
