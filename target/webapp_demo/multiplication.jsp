@@ -73,9 +73,9 @@
     <hr/>
 
     <table>
-        <c:forEach begin="1" end=" ${param.rows}" var="row">
+        <c:forEach begin="1" end="${param.rows}" var="row">
             <tr>
-                <c:forEach begin="1" end=" ${param.cols}" var="col">
+                <c:forEach begin="1" end="${param.cols}" var="col">
                     <td>
                             ${row*col}
                     </td>

@@ -15,5 +15,11 @@
     <li>
         <a href="${pageContext.request.contextPath}/multiplication.jsp">Tabliczka mnożenia</a>
     </li>
+    <li>
+        <a href="${pageContext.request.contextPath}/students">Lista studentów</a>
+    </li>
+    <li>
+        <a href="${pageContext.request.contextPath}/student/form">Formularz dodawania studentów</a>
+    </li>
 
 </ul>
