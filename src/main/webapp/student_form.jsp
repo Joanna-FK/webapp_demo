@@ -34,7 +34,8 @@
         </div>
         <div>
             <label>
-                <input type="checkbox" name="graduated_field" checked = "${requestScope.modifiedStudent.graduated ? false : true}">
+                <input type="checkbox" name="graduated_field"
+                       <c:if test="${requestScope.modifiedStudent.graduated}">checked</c:if>>
                 <span>Graduated</span>
             </label>
         </div>
