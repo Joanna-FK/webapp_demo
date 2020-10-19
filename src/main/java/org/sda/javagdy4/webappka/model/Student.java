@@ -29,7 +29,7 @@ public class Student {
     private Integer age;
 
     @Formula("(SELECT AVG(g.value) FROM grade g where g.student_id = id)")
-    private Double gradeAverage;
+    private Double gradesAverage;
 
     @OneToMany (mappedBy = "student", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     @Cascade(org.hibernate.annotations.CascadeType.REMOVE)

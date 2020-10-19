@@ -11,7 +11,7 @@
 
 <html>
 <head>
-    <title>Student Form</title>
+    <title>Student Details</title>
     <jsp:include page="headers.jsp"/>
 </head>
 <body>
@@ -22,11 +22,11 @@
         <div>
             <table>
                 <tr>
-                    <td>Imie:</td>
+                    <td>First name:</td>
                     <td>${requestScope.studentToDisplay.firstName}</td>
                 </tr>
                 <tr>
-                    <td>Nazwisko:</td>
+                    <td>Last name:</td>
                     <td>${requestScope.studentToDisplay.lastName}</td>
                 </tr>
                 <tr>
@@ -35,7 +35,7 @@
                 </tr>
                 <tr>
                     <td>Average:</td>
-                    <td>${requestScope.studentToDisplay.average}</td>
+                    <td>${requestScope.studentToDisplay.gradesAverage}</td>
                 </tr>
                 <tr>
                     <td>Home distance:</td>
@@ -69,6 +69,7 @@
                         <td>${grade.subject}</td>
                         <td>
                             <a href="${pageContext.request.contextPath}/grade/remove?gradeId=${grade.id}">Remove</a>
+                            <a href="${pageContext.request.contextPath}/grade/edit?gradeId=${grade.id}">Edit</a>
                         </td>
                     </tr>
                 </c:forEach>

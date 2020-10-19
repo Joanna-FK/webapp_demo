@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -28,4 +27,6 @@ public class Grade {
     @ManyToOne
     @EqualsAndHashCode.Exclude
     private Student student;
+
+
 }

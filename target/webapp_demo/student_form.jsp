@@ -34,7 +34,8 @@
         </div>
         <div>
             <label>
-                <input type="checkbox" name="graduated_field" checked = "${requestScope.modifiedStudent.graduated ? false : true}">
+                <input type="checkbox" name="graduated_field"
+                       <c:if test="${requestScope.modifiedStudent.graduated}">checked</c:if>>
                 <span>Graduated</span>
             </label>
         </div>
@@ -44,7 +45,7 @@
             <input type="number" step="0.01" name="distance_field" value = "${requestScope.modifiedStudent.homeDistance}"/>
         </div>
         <button type="submit">Submit</button>
-        <button type="reset">Submit</button>
+        <button type="reset">Reset</button>
     </form>
 </div>
 <jsp:include page="footers.jsp"/>
